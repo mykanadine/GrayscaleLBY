@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="GrayscaleLBY/GrayscaleLBY.vcxproj" Id="d1f44ee8-80e7-43d7-94fa-4d2b65f03034" />
+</Solution>
