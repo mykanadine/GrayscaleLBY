@@ -10,7 +10,8 @@ imgCvtGrayIntToDouble:
 
 	; convert int to float
 	cvtsi2sd xmm0, ecx
-
+	; load 255.0 into xmm1
+	movsd xmm1, [divisor]    
 	; divide
-	divsd xmm0, [divisor]
+	divsd xmm0, xmm1
 	ret
