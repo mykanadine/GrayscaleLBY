@@ -55,9 +55,12 @@ int main() {
     printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, elapsed);
 
     // checker
+    printf("============================================\n");
+    printf("============== C output checker ============\n");
+    printf("============================================\n");
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
-            output = image_int[i * col + j] / 255;
+            output = (double)image_int[i * col + j] / 255.0;
             printf("%.2f ", output);
         }
          printf("\n");
