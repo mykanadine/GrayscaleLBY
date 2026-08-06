@@ -8,7 +8,7 @@ The table below shows execution times for different input sizes:
 
 | Input Size | Average Execution Time (30 runs)|
 |------------|-------------------------|
-| 10*10       |          |
+| 10*10       |     0.005733 seconds      |
 | 100*100     |                        |
 | 1000*1000  |                          |
 
