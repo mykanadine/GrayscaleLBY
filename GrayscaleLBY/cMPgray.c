@@ -52,7 +52,7 @@ int main() {
     // timing end
     clock_t end = clock();
     double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, elapsed);
+    
 
     // checker
     printf("============================================\n");
@@ -66,7 +66,7 @@ int main() {
          printf("\n");
     }
    
-
+    printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, elapsed);
     free(image_int);
 
     return 0;
