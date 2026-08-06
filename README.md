@@ -1,8 +1,6 @@
 # GrayscaleLBY
-## Description
 
-This project implements a grayscale image conversion 
-It converts pixel values from **8‑bit unsigned integer representation (0–255)** into **double‑precision floating‑point representation (0–1)** using ratio and proportion.  
+This project performs mapping from uint8 based integer grayscale to double precision float representation
 
 
 ## Execution Time and Short Analysis of Pertformance
