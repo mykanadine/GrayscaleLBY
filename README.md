@@ -1,9 +1,8 @@
-# GrayscaleLBY
+# LBYARCH x86-to-C: Grayscale Image Conversion From Int to Float
 
 This project performs mapping from uint8 based integer grayscale to double precision float representation
 
-
-## Execution Time and Short Analysis of Pertformance
+## Execution Time and Short Analysis of Performance
 
 The table below shows execution times for different input sizes:
 
@@ -14,4 +13,9 @@ The table below shows execution times for different input sizes:
 | 1000*1000  |                          |
 
 
-<img width="687" height="810" alt="image" src="https://github.com/user-attachments/assets/14d2c8ab-0584-44e7-ba60-f8b324f9fd9a" />
+## Outputs with Correctness Check
+
+<img width="687" height="810" alt="image" src="https://github.com/user-attachments/assets/154866de-9169-4cfd-844a-c8f3aa0d6a57" />
+<img width="1272" height="1111" alt="image" src="https://github.com/user-attachments/assets/76044045-8b3f-4d58-bce7-bc6c8a281fb7" />
+
+## Video Demo
