@@ -20,6 +20,9 @@ The table below shows execution times for different input sizes:
 - Bottleneck (Console Printing): The timer includes printf() for every pixel
 - The execution  time grows as the input size increases
 
+The execution time increases significantly as the input size grows because the number of pixels processed increases. A 10×10 image contains only 100 pixels, while a 100×100 image contains 10,000 pixels (100× more), and a 1000×1000 image contains 1,000,000 pixels (10,000× more than the 10×10 image). Since each pixel needs to be converted individually from an  integer  to a double-precision floating-point value, the total processing time naturally increases with the number of pixels.
+
+The measured average execution times (0.0020 s, 0.2885 s, and 30.1470 s) show this trend clearly. However, the increase is larger than expected from the conversion operation alone because the timing also includes console output (printf) for every pixel. Printing to the console is much slower than performing operations, making it the primary performance bottleneck.
 
 ## Execution Time Outputs
 
