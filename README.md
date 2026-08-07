@@ -18,6 +18,8 @@ The table below shows execution times for different input sizes:
 
 
 ### 100 x 100
+<img width="2294" height="641" alt="image" src="https://github.com/user-attachments/assets/4511ce51-f93e-4f99-b9cd-39d387430997" />
+
 
 
 ### 1000 x 1000
