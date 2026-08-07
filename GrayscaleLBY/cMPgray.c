@@ -31,26 +31,23 @@ int main() {
     printf("===========================================\n");
     printf("=============== Input =====================\n");
     printf("===========================================\n");
+
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             printf("%3d ", image_int[i * col + j]);
         }
         printf("\n");
     }
-	// timing start (just computation)
-	clock_t start = clock();
-	for (int i = 0; i < row; i++) {
-		for (int j = 0; j < col; j++) {
-			output = imgCvtGrayIntToDouble(image_int[i * col + j]);
-		}
-	}
-	clock_t end = clock();
-	double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
 
-   printf("============================================\n");
+    printf("============================================\n");
     printf("=============== Output =====================\n");
     printf("============================================\n");
+
     // input image in int
+
+    // start timer
+    clock_t start = clock();
+
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             output = imgCvtGrayIntToDouble(image_int[i * col + j]);
@@ -58,12 +55,16 @@ int main() {
         }
          printf("\n");
     }
-  
+
+    // end timer
+    clock_t end = clock();
+	double time = (double)(end - start) / CLOCKS_PER_SEC;
 
     // checker
     printf("============================================\n");
     printf("============== C output checker ============\n");
     printf("============================================\n");
+
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             output = (double)image_int[i * col + j] / 255.0;
@@ -72,7 +73,7 @@ int main() {
          printf("\n");
     }
 
-    printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, elapsed);
+    printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, time);
     free(image_int);
 
     return 0;
