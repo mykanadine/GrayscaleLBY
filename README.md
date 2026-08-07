@@ -37,12 +37,58 @@ The **imgCvtGrayIntToDouble** function takes a very short time to run for a 10x1
 <img width="1089" height="490" alt="image" src="https://github.com/user-attachments/assets/5e8ad935-39c5-437c-bd03-213ecca7c9e0" />
 
 ## Correctness Check
-<img width="475" height="801" alt="image" src="https://github.com/user-attachments/assets/9199b985-9f97-4f78-8fb6-f6a7cc943205" />
-<img width="424" height="560" alt="image" src="https://github.com/user-attachments/assets/2e3673b7-f9f1-4ff6-b125-215be8666273" />
+<img width="475" height="801" alt="image" src="https://github.com/user-attachments/assets/9199b985-9f97-4f78-8fb6-f6a7cc943205" /><br>
+<img width="424" height="560" alt="image" src="https://github.com/user-attachments/assets/2e3673b7-f9f1-4ff6-b125-215be8666273" /><br>
 <img width="425" height="370" alt="image" src="https://github.com/user-attachments/assets/fccd2120-e131-4b3a-bec0-8c5f120e847a" />
 
 ## Code used to record average times:
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+extern double imgCvtGrayIntToDouble(int pixel);
+
+int main() {
+
+    int row, col;
+    double output;
+
+    scanf_s("%d %d", &row, &col);
+
+    int* image_int = (int*)malloc(row * col * sizeof(int));
+    double* image_double = (double*)malloc(row * col * sizeof(double));
+
+    srand((unsigned)time(NULL));
+    for (int i = 0; i < row * col; i++) {
+        image_int[i] = rand() % 256;
+    }
+
+    double average_time;
+    double total = 0;
+
+    for (int i = 0; i < 30; i++) {
+        clock_t start = clock();
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                image_double[i * col + j] = imgCvtGrayIntToDouble(image_int[i * col + j]);
+            }
+        }
+        clock_t end = clock();
+
+        double time = (double)(end - start) / CLOCKS_PER_SEC;
+        total += time;
+    }
+
+    average_time = total / 30;
+
+    printf("Average time: %f seconds\n", average_time);
+    free(image_int);
+
+    return 0;
+}
+```
 
 
 
