@@ -1,24 +1,28 @@
 # LBYARCH x86-to-C: Grayscale Image Conversion From Int to Float
+Created By:
+- Chua, Myka Nadine
+- Lim, Julienne Skye
 
-This project performs mapping from uint8 based integer grayscale to double precision float representation
-## Video demo link
-https://drive.google.com/file/d/1kQGe8YkT6Toy6vpe1xnYEF8Vh2zTPCrZ/view?usp=sharing
+This project converts a pixel values in a grayscale image from 8-bit unsigned integer to double float.
+
+
+[Video Demo](https://drive.google.com/file/d/1f5JJ0toaxeiKQVWX_qjt2MJRRjngggfP/view?usp=sharing)
 
 ## Execution Time and Short Analysis of Performance
 
 The table below shows execution times for different input sizes:
 | Input Size  | Average Execution Time (30 runs) |
-|------------|----------------------------------|
-| 10×10         |0.0020 seconds                |
-| 100×100     |   0.2885 seconds             |
-| 1000×1000   |  30.1470 seconds    |
+|-------------|-----------------|
+| 10×10       | 0.0020 seconds  |
+| 100×100     | 0.2885 seconds  |
+| 1000×1000   | 30.1470 seconds |
 
 ### Short analysis
 - For small inputs (10×10), the program runs almost instantly.
 - For medium inputs (100×100), it slows down to almost a third of a second
 - For large inputs (1000×1000), it takes around 30 seconds each run.
-- Bottleneck (Console Printing): The timer includes printf() for every pixel
-- The execution  time grows as the input size increases
+- The **imgCvtGrayIntToDouble** function alone takes less than 10 microseconds. The total time taken is inflated because it takes into account how long the output takes to print.
+- The execution time grows as the input size increases.
 
 The execution time increases significantly as the input size grows because the number of pixels processed increases. A 10×10 image contains only 100 pixels, while a 100×100 image contains 10,000 pixels (100× more), and a 1000×1000 image contains 1,000,000 pixels (10,000× more than the 10×10 image). Since each pixel needs to be converted individually from an  integer  to a double-precision floating-point value, the total processing time naturally increases with the number of pixels.
 
