@@ -5,17 +5,37 @@ This project performs mapping from uint8 based integer grayscale to double preci
 ## Execution Time and Short Analysis of Performance
 
 The table below shows execution times for different input sizes:
+| Input Size | One Run Execution Time | Average Execution Time (30 runs) |
+|------------|------------------------|----------------------------------|
+| 10×10      | 0.0000 seconds         | 0.0000 seconds                 |
+| 100×100    | 0.0000 seconds         | 0.0000 seconds                 |
+| 1000×1000  | 0.0039  seconds   |  0.0039 seconds
 
-| Input Size | Average Execution Time (30 runs)|
-|------------|-------------------------|
-| 10*10       |          |
-| 100*100     |                        |
-| 1000*1000  |                          |
+
+## Execution Time Outputs
+
+### 10 x 10
+<img width="2058" height="1560" alt="image" src="https://github.com/user-attachments/assets/567ad3a1-adc6-4aef-9b7e-4539a91cbdc5" />
+<img width="1490" height="523" alt="image" src="https://github.com/user-attachments/assets/8e3c6396-8d9a-45ce-9589-928fde624a26" />
+
+### 100 x 100
+<img width="1273" height="480" alt="image" src="https://github.com/user-attachments/assets/9a8d48a8-6b28-4381-93a1-e8376188a76a" />
+<img width="1724" height="519" alt="image" src="https://github.com/user-attachments/assets/0dbe1e66-4d0d-4ab2-8268-1fd424a7c49d" />
+
+### 1000 x 1000
+<img width="1743" height="526" alt="image" src="https://github.com/user-attachments/assets/68ee9485-2526-4923-b0ae-2dab553501c7" />
+<img width="1000" height="241" alt="image" src="https://github.com/user-attachments/assets/bb72b585-e1b8-46ae-92ae-bcea36d3edbe" />
+
 
 
 ## Outputs with Correctness Check
+<img width="581" height="562" alt="image" src="https://github.com/user-attachments/assets/e4ccae65-8ab3-45f6-907d-8332f9a6694c" />
+<img width="823" height="512" alt="image" src="https://github.com/user-attachments/assets/1830127b-ee80-4748-b02e-5bd0edb7cd6f" />
 
-<img width="687" height="810" alt="image" src="https://github.com/user-attachments/assets/154866de-9169-4cfd-844a-c8f3aa0d6a57" />
-<img width="1272" height="1111" alt="image" src="https://github.com/user-attachments/assets/76044045-8b3f-4d58-bce7-bc6c8a281fb7" />
+
+
+
+
+
 
 ## Video Demo
