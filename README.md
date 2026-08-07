@@ -9,14 +9,16 @@ https://drive.google.com/file/d/1kQGe8YkT6Toy6vpe1xnYEF8Vh2zTPCrZ/view?usp=shari
 The table below shows execution times for different input sizes:
 | Input Size | One Run Execution Time | Average Execution Time (30 runs) |
 |------------|------------------------|----------------------------------|
-| 10×10      | 0.0000 seconds         | 0.0000 seconds                 |
-| 100×100    | 0.0000 seconds         | 0.0000 seconds                 |
-| 1000×1000  | 0.0039  seconds   |  0.0039 seconds
+| 10×10      | 0.0000 seconds         |0.0020 seconds                |
+| 100×100    | 0.0000 seconds         |   0.2885 seconds             |
+| 1000×1000  | 0.0039  seconds   |  30.1470 seconds
 
 
 ## Execution Time Outputs
 
 ### 10 x 10
+<img width="1944" height="1081" alt="image" src="https://github.com/user-attachments/assets/a53e1dd6-1009-4451-baa2-6666f94b6ebc" />
+
 
 
 ### 100 x 100
@@ -25,6 +27,8 @@ The table below shows execution times for different input sizes:
 
 
 ### 1000 x 1000
+<img width="2307" height="570" alt="image" src="https://github.com/user-attachments/assets/8f170a7b-d257-430d-9e6e-37c6fb7c954a" />
+
 
 
 
