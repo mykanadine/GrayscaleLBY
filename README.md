@@ -9,7 +9,7 @@ The table below shows execution times for different input sizes:
 |------------|------------------------|----------------------------------|
 | 10×10      | 0.0000 seconds         | 0.0000 seconds                 |
 | 100×100    | 0.0000 seconds         | 0.0000 seconds                 |
-| 1000×1000  | 0.0070     |  0.0039 seconds
+| 1000×1000  | 0.0039     |  0.0039 seconds
 
 
 ## Execution Time Outputs
