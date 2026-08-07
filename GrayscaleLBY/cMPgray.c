@@ -15,6 +15,7 @@ int main() {
 
     // declare dynamic 2d array
     int* image_int = (int*)malloc(row * col * sizeof(int));
+	double* image_double = (double*)malloc(row * col * sizeof(double));
 
     // just in case
     if (image_int == NULL) {
@@ -26,7 +27,7 @@ int main() {
     for (int i = 0; i < row * col; i++) {
         image_int[i] = rand() % 256; // grayscale 0–255
     }
-   
+
     // print input
     printf("===========================================\n");
     printf("=============== Input =====================\n");
@@ -38,27 +39,32 @@ int main() {
         }
         printf("\n");
     }
-
-    printf("============================================\n");
-    printf("=============== Output =====================\n");
-    printf("============================================\n");
-
-    // input image in int
-
-    // start timer
+      
+    // conversion
     clock_t start = clock();
 
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
-            output = imgCvtGrayIntToDouble(image_int[i * col + j]);
-            printf("%.2f ", output);
+            image_double[i * col + j] = imgCvtGrayIntToDouble(image_int[i * col + j]);
         }
-         printf("\n");
     }
 
-    // end timer
     clock_t end = clock();
-	double time = (double)(end - start) / CLOCKS_PER_SEC;
+
+    // time
+    double time = (double)(end - start) / CLOCKS_PER_SEC;
+
+    // print output
+    printf("============================================\n");
+    printf("=============== Output =====================\n");
+    printf("============================================\n");
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            printf("%.2f ", image_double[i * col + j]);
+        }
+        printf("\n");
+    }
 
     // checker
     printf("============================================\n");
@@ -70,10 +76,10 @@ int main() {
             output = (double)image_int[i * col + j] / 255.0;
             printf("%.2f ", output);
         }
-         printf("\n");
+        printf("\n");
     }
 
-    printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, time);
+    printf("Time for %dx%d image size : %f seconds\n", row, col, time);
     free(image_int);
 
     return 0;
