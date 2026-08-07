@@ -7,18 +7,20 @@ This project performs mapping from uint8 based integer grayscale to double preci
 The table below shows execution times for different input sizes:
 | Input Size | One Run Execution Time | Average Execution Time (30 runs) |
 |------------|------------------------|----------------------------------|
-| 10×10      | 0.0050 seconds         | 0.005733 seconds                 |
-| 100×100    | 0.3590 seconds         | 0.420100 seconds                 |
+| 10×10      | 0.0000 seconds         | 0.005733 seconds                 |
+| 100×100    | 0.0000 seconds         | 0.420100 seconds                 |
 | 1000×1000  | (fill in measured)     |  18.900200 seconds
 
+
+## Execution Time Outputs
+
+
+<img width="2058" height="1560" alt="image" src="https://github.com/user-attachments/assets/567ad3a1-adc6-4aef-9b7e-4539a91cbdc5" />
+<img width="1273" height="480" alt="image" src="https://github.com/user-attachments/assets/9a8d48a8-6b28-4381-93a1-e8376188a76a" />
 
 ## Outputs with Correctness Check
 
 
-<img width="1243" height="960" alt="image" src="https://github.com/user-attachments/assets/6a38ee99-d908-4b07-bdfc-aa8a08e5e85f" />
-<img width="1327" height="1100" alt="image" src="https://github.com/user-attachments/assets/5d68a474-c8e3-4fd9-bdda-cd4131c8c175" />
-
-<img width="1300" height="1577" alt="image" src="https://github.com/user-attachments/assets/ca3785f5-c31e-43a9-8907-9f8957b9b042" />
 
 
 
