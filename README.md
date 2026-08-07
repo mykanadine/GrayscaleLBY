@@ -43,4 +43,3 @@ The table below shows execution times for different input sizes:
 
 
 
-## Video Demo
