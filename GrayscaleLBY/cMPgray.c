@@ -26,6 +26,7 @@ int main() {
     for (int i = 0; i < row * col; i++) {
         image_int[i] = rand() % 256; // grayscale 0–255
     }
+   
     // print input
     printf("===========================================\n");
     printf("=============== Input =====================\n");
@@ -36,9 +37,17 @@ int main() {
         }
         printf("\n");
     }
-    // timing start
-    clock_t start = clock();
-    printf("============================================\n");
+	// timing start (just computation)
+	clock_t start = clock();
+	for (int i = 0; i < row; i++) {
+		for (int j = 0; j < col; j++) {
+			output = imgCvtGrayIntToDouble(image_int[i * col + j]);
+		}
+	}
+	clock_t end = clock();
+	double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
+
+   printf("============================================\n");
     printf("=============== Output =====================\n");
     printf("============================================\n");
     // input image in int
@@ -49,10 +58,7 @@ int main() {
         }
          printf("\n");
     }
-    // timing end
-    clock_t end = clock();
-    double elapsed = (double)(end - start) / CLOCKS_PER_SEC;
-    
+  
 
     // checker
     printf("============================================\n");
@@ -65,7 +71,7 @@ int main() {
         }
          printf("\n");
     }
-   
+
     printf("Elapsed time for %dx%d image size : %.4f seconds\n", row, col, elapsed);
     free(image_int);
 
