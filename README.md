@@ -20,7 +20,8 @@ The table below shows execution times for the .asm function with different sizes
 
 ### Short analysis
 
-The **imgCvtGrayIntToDouble** function takes a very short time to run for a 10x10 image. We attempted to print up to 15 decimal places for the average execution time, but even then it was still all 0. This means that it took less than a quadrillionth of a second to convert. Even when the size of the image increases exponentially (100x100 and 1000x1000), the function still only takes less than 3 ms to completely convert the pixels. This increase is still a significant jump from the initial 10x10 image. The time taken to completely convert the larger images increased by more than 2000 times. However, it is interesting that we do not observe the same phenomena occur when increasing from 100x100 to 1000x1000. The jump from 100 to 1000 is significantly smaller compared to the jump from 10 to 100. 
+The **imgCvtGrayIntToDouble** function takes a very short time to run for all tested image sizes. For the 10×10 image, the measured execution time was 0.000000 seconds, indicating that the conversion completed faster than the timer could accurately measure. As the image size increased to 100×100 and 1000×1000, the execution time also increased because more pixels had to be processed. However, even for the 1000×1000 image, the function completed the conversion in less than 3 milliseconds, showing how efficient the assembly implementation is.
+
 
 ## Execution Time Outputs
 
