@@ -17,7 +17,8 @@ The table below shows execution times for different input sizes:
 ## Execution Time Outputs
 
 ### 10 x 10
-<img width="1944" height="1081" alt="image" src="https://github.com/user-attachments/assets/a53e1dd6-1009-4451-baa2-6666f94b6ebc" />
+<img width="1972" height="1432" alt="image" src="https://github.com/user-attachments/assets/05d57409-6c9e-4821-b6bd-d60ec790abbf" />
+
 
 
 
