@@ -7,11 +7,11 @@ https://drive.google.com/file/d/1kQGe8YkT6Toy6vpe1xnYEF8Vh2zTPCrZ/view?usp=shari
 ## Execution Time and Short Analysis of Performance
 
 The table below shows execution times for different input sizes:
-| Input Size | One Run Execution Time | Average Execution Time (30 runs) |
-|------------|------------------------|----------------------------------|
-| 10×10      | 0.0000 seconds         |0.0020 seconds                |
-| 100×100    | 0.0000 seconds         |   0.2885 seconds             |
-| 1000×1000  | 0.0039  seconds   |  30.1470 seconds
+| Input Size  | Average Execution Time (30 runs) |
+|------------|----------------------------------|
+| 10×10         |0.0020 seconds                |
+| 100×100     |   0.2885 seconds             |
+| 1000×1000   |  30.1470 seconds
 
 
 ## Execution Time Outputs
