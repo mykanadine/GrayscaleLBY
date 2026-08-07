@@ -17,8 +17,9 @@ The table below shows execution times for different input sizes:
 - For small inputs (10×10), the program runs almost instantly.
 - For medium inputs (100×100), it slows down to almost a third of a second
 - For large inputs (1000×1000), it takes around 30 seconds each run.
+- Bottleneck (Console Printing): The timer includes printf() for every pixel
 - The execution  time grows as the input size increases
-- Printing is included in the recorded time, so the actual computation may be a bit faster if printing is removed.
+
 
 ## Execution Time Outputs
 
