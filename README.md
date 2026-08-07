@@ -34,6 +34,8 @@ The table below shows execution times for different input sizes:
 
 
 ## Outputs with Correctness Check
+<img width="1204" height="953" alt="image" src="https://github.com/user-attachments/assets/d01d58ed-f2ad-4282-a2c2-aa28c41a2294" />
+<img width="2563" height="1578" alt="image" src="https://github.com/user-attachments/assets/3c355648-8ffb-44a5-bf89-2ef62c985bf3" />
 
 
 
